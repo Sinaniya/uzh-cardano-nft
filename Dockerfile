@@ -56,3 +56,8 @@ RUN cd cardano-node \
     && cp -p "$(./scripts/bin-path.sh cardano-cli)" $HOME/.local/bin/
 RUN echo "PATH=$HOME/.local/bin/:$PATH" >> ~/.bashrc \
     && source ~/.bashrc
+
+# install blockfrost-cardano-cli
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash
+RUN apt-get install nodejs -y
+RUN npm install -g @blockfrost/blockfrost-cardano-cli

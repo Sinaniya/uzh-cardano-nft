@@ -1,3 +1,10 @@
+.env
+
 .vscode/
 __pycache__/
-.env
+
+*.skey
+*.vkey
+*.draft
+utxo.json
+protocol.json
