@@ -1,1 +1,2 @@
 python-dotenv==0.20.0
+blockfrost-python==0.5.1
