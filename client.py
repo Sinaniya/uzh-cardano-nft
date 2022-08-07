@@ -147,6 +147,13 @@ class CardanoClient:
                     str(self._invalid_hereafter),
                 ]
             )
+        if metadata_json_file is not None:
+            cmd.extend(
+                [
+                    "--metadata-json-file",
+                    metadata_json_file,
+                ]
+            )
         if nft_string is not None:
             assert minting_script_file is not None, "you must provide a policy script"
             assert metadata_json_file is not None, "you must provide a metadata json"
@@ -156,8 +163,6 @@ class CardanoClient:
                     nft_string,
                     "--minting-script-file",
                     minting_script_file,
-                    "--metadata-json-file",
-                    metadata_json_file,
                 ]
             )
         for tx in tx_in:

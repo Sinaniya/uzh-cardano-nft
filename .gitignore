@@ -9,6 +9,9 @@ data/
 protocol.json
 *.skey
 *.vkey
+*.xprv
+*.xpub
+*.prv
 *.addr
 *.raw
 *.draft
@@ -16,3 +19,6 @@ protocol.json
 *.signed
 *.script
 distribute.*
+
+bech32
+cardano-address
