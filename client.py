@@ -8,8 +8,8 @@ logger = logging.getLogger(__name__)
 
 
 class Network(IntEnum):
-    MAINNET = 1
-    TESTNET = 1097911063
+    MAINNET = 0
+    TESTNET = 1
 
 
 class CardanoClient:

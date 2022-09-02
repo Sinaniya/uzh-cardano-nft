@@ -61,9 +61,31 @@ metadata = {
         "description": "UZH Blockchain Center",
         "issuer": "Prof. Dr. Claudio J. Tessone, Chairman & Academic Director",
         "email" : "claudio.tessone@uzh.ch",
-        "publicKey": "",
+        "publicKey": [
+            "4cd4a3d6d6b493edd324c3df243342b28efbdaaa4f7c776ab818f84819f08909",
+            "f8c9491994f799465050e1a202a17d13d3b76289150792afbd3b6f4a3439195e",
+        ],
         "verification": "SignedBadge"
     }
+    # "1870": {
+    #     "@context": "https://w3id.org/openbadges/v2",
+    #     "id": [
+    #         "https://files.ifi.uzh.ch/bdlt/cert/openbadges/",
+    #         "courses/2022/summerschool_blockchain_id.json"
+    #     ],
+    #     "type": "BadgeClass",
+    #     "name": [
+    #         "UZH Summer School 2022 Deep Dive into Blockchain",
+    #         " - Linking Economics, Technology and Law"
+    #     ],
+    #     "description": [
+    #         "This academic certificate is awarded for passing",
+    #         " the UZH Deep Dive into Blockchain 2022 Summer School Course."
+    #     ],
+    #     "image": "ipfs://QmZosBNUPXccntUU5THgBGkmSqwNPxEBupW3J7wrWTsgSm",
+    #     "tags": ["blockchain", "uzh blockchain observatory", "cardano", "academic certificate"],
+    #     "issuer": "https://files.ifi.uzh.ch/bdlt/cert/openbadges/issuer_id.json",
+    # }
 }
 for k, v in metadata['1870'].items():
     if isinstance(v, str) and len(v.encode('utf-8')) > 64:
